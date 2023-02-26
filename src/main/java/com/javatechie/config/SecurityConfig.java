@@ -22,7 +22,7 @@ public class SecurityConfig {
 
         return http
                 .authorizeHttpRequests()
-                .requestMatchers("/home").permitAll()
+                .requestMatchers("/**").permitAll()
                 .and().build();
     }
 
